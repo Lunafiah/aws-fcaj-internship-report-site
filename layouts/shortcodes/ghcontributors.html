@@ -1,0 +1,61 @@
+<style type="text/css">
+  .ghContributors {
+    display: flex;
+    flex-flow: wrap;
+    align-content: flex-start;
+  }
+
+  .ghContributors > div {
+    width: 50%;
+    display: inline-flex;
+    margin-bottom: 5px;
+  }
+  .ghContributors > div label {
+    padding-left: 4px;
+  }
+  .ghContributors > div span {
+    font-size: x-small;
+    padding-left: 4px;
+  }
+</style>
+<div class="ghContributors" data-gh-url="{{ .Get 0 }}">
+  <!-- Contributors will be fetched client-side to avoid server-side template function issues -->
+</div>
+<script>
+  (function(){
+    try {
+      var container = document.currentScript && document.currentScript.previousElementSibling;
+      if (!container || !container.dataset || !container.dataset.ghUrl) return;
+      var url = container.dataset.ghUrl;
+      fetch(url).then(function(res){
+        if (!res.ok) throw new Error('Network response not ok');
+        return res.json();
+      }).then(function(list){
+        list.forEach(function(item){
+          var div = document.createElement('div');
+          var img = document.createElement('img');
+          img.src = item.avatar_url;
+          img.width = 32; img.height = 32;
+          img.style.marginBottom = '0.25em';
+          img.style.verticalAlign = 'middle';
+          var label = document.createElement('label');
+          var a = document.createElement('a');
+          a.href = item.html_url; a.textContent = '@' + item.login;
+          label.appendChild(a);
+          var span = document.createElement('span');
+          span.className = 'contributions';
+          span.textContent = (item.contributions || 0) + ' commits';
+          div.appendChild(img);
+          div.appendChild(label);
+          div.appendChild(span);
+          container.appendChild(div);
+        });
+      }).catch(function(err){
+        // silent fail: leave container empty
+        console.warn('ghcontributors fetch failed:', err);
+      });
+    } catch (e) {
+      console.warn('ghcontributors script error', e);
+    }
+  })();
+</script>
