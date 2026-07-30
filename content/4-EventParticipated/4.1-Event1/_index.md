@@ -77,6 +77,6 @@ Attending the **FCAJ Meetup Day 2026** was extremely valuable, providing a compr
 - Was inspired by the 8-step journey to becoming an AWS Partner and the value of community contribution[cite: 3].
 
 #### Some event photos
-![Photo 1](images/event1_1.jpg)
-![Photo 2](images/event1_2.jpg)
+![Ảnh 1](event1.jpg)
+![Ảnh 2](event2.jpg)
 > Overall, the event not only provided technical knowledge on AWS architectures but also helped me reshape my thinking about career development, system thinking, and multinational corporate culture.

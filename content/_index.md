@@ -1,6 +1,6 @@
 ---
 title: "Internship Report"
-date: 2024-01-01
+date: 2026-07-30
 weight: 1
 chapter: false
 ---
@@ -8,9 +8,7 @@ chapter: false
     
 # Internship Report
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
+
 
 ### Student Information:
 &emsp; **Full Name:** La Minh Hieu
@@ -31,7 +29,7 @@ chapter: false
 
 &emsp; **Internship Duration:** From 01/06/2026 to 14/08/2026
 
-![Your profile picture](/images/avatar.png)
+![Your profile picture](avatar.png)
 
 ### Report Content
 

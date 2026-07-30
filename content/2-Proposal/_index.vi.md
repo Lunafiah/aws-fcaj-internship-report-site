@@ -1,6 +1,6 @@
 ---
 title: "Bản đề xuất"
-date: 2024-01-01
+date: 2026-07-30
 weight: 2
 chapter: false
 pre: " <b> 2. </b> "
@@ -24,7 +24,7 @@ Sử dụng mã QR tĩnh để điểm danh thì dễ bị sinh viên chụp ả
 
 Hệ thống được thiết kế theo mô hình **Serverless 100%**, tận dụng tối đa các dịch vụ managed của AWS:
 
-![Sơ đồ kiến trúc giải pháp](/images/5-Workshop/diagram.png)
+![Sơ đồ kiến trúc giải pháp](diagram.png)
 
 | Dịch vụ AWS | Mục đích / Vai trò | Lý do lựa chọn |
 |---|---|---|

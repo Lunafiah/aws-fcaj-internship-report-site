@@ -1,6 +1,6 @@
 ---
 title: "Proposal"
-date: 2024-01-01
+date: 2026-07-30
 weight: 2
 chapter: false
 pre: " <b> 2. </b> "
@@ -24,7 +24,7 @@ Using static QR codes for attendance makes it easy for students to take photos a
 
 The system is designed with a **100% Serverless** model, taking full advantage of AWS managed services:
 
-![Solution Architecture Diagram](/images/5-Workshop/diagram.png)
+![Solution Architecture Diagram](diagram.png)
 
 | AWS Service | Purpose / Role | Reason for Selection |
 |---|---|---|

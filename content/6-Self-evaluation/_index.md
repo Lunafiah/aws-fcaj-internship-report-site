@@ -1,37 +1,34 @@
 ---
 title: "Self-Assessment"
-date: 2024-01-01
+date: 2026-07-30
 weight: 6
 chapter: false
 pre: " <b> 6. </b> "
 ---
 
+Throughout the 9-week internship at the **First Cloud AI Journey (FCAJ)** program, from **June 1st** to **July 31st, 2026**, I had the opportunity to apply theoretical knowledge from university into a hands-on cloud engineering project. My team developed **BK-Sync — a Smart QR Attendance System** built entirely on AWS Serverless architecture, which allowed me to gain practical experience with services such as Lambda, DynamoDB, API Gateway, and Cognito.
 
+Working on a real-world project taught me the importance of writing clean, testable code and collaborating effectively in a team environment using Git workflows and CI/CD pipelines.
 
-During my internship at **[Company/Organization Name]** from **[start date]** to **[end date]**, I had the opportunity to learn, practice, and apply the knowledge acquired in school to a real-world working environment.  
-I participated in **[briefly describe the main project or task]**, through which I improved my skills in **[list skills: programming, analysis, reporting, communication, etc.]**.  
-
-In terms of work ethic, I always strived to complete tasks well, complied with workplace regulations, and actively engaged with colleagues to improve work efficiency.
-
-To objectively reflect on my internship period, I would like to evaluate myself based on the following criteria:
+Below is my honest self-assessment based on key criteria:
 
 | No. | Criteria                            | Description                                                                                      | Good | Fair | Average |
 | --- | ----------------------------------- | ------------------------------------------------------------------------------------------------ | ---- | ---- | ------- |
-| 1   | **Professional knowledge & skills** | Understanding of the field, applying knowledge in practice, proficiency with tools, work quality | ✅    | ☐    | ☐       |
-| 2   | **Ability to learn**                | Ability to absorb new knowledge and learn quickly                                                | ☐    | ✅    | ☐       |
-| 3   | **Proactiveness**                   | Taking initiative, seeking out tasks without waiting for instructions                            | ✅    | ☐    | ☐       |
-| 4   | **Sense of responsibility**         | Completing tasks on time and ensuring quality                                                    | ✅    | ☐    | ☐       |
-| 5   | **Discipline**                      | Adhering to schedules, rules, and work processes                                                 | ☐    | ☐    | ✅       |
-| 6   | **Progressive mindset**             | Willingness to receive feedback and improve oneself                                              | ☐    | ✅    | ☐       |
-| 7   | **Communication**                   | Presenting ideas and reporting work clearly                                                      | ☐    | ✅    | ☐       |
-| 8   | **Teamwork**                        | Working effectively with colleagues and participating in teams                                   | ✅    | ☐    | ☐       |
-| 9   | **Professional conduct**            | Respecting colleagues, partners, and the work environment                                        | ✅    | ☐    | ☐       |
-| 10  | **Problem-solving skills**          | Identifying problems, proposing solutions, and showing creativity                                | ☐    | ✅    | ☐       |
-| 11  | **Contribution to project/team**    | Work effectiveness, innovative ideas, recognition from the team                                  | ✅    | ☐    | ☐       |
-| 12  | **Overall**                         | General evaluation of the entire internship period                                               | ✅    | ☐    | ☐       |
+| 1   | **Professional knowledge & skills** | Understanding of cloud architecture, applying IaC and Serverless patterns in practice             | ☐    | ✅    | ☐       |
+| 2   | **Ability to learn**                | Picking up new AWS services, CDK, and testing frameworks within a short timeframe                 | ☐    | ✅    | ☐       |
+| 3   | **Proactiveness**                   | Seeking out labs and tasks independently, attending community events                              | ☐    | ✅    | ☐       |
+| 4   | **Sense of responsibility**         | Delivering assigned features and meeting sprint deadlines                                        | ☐    | ✅    | ☐       |
+| 5   | **Discipline**                      | Following team schedules, meeting attendance, and adhering to the program's rules                | ✅    | ☐    | ☐       |
+| 6   | **Progressive mindset**             | Accepting code review feedback and iterating on implementations                                  | ☐    | ✅    | ☐       |
+| 7   | **Communication**                   | Reporting progress in weekly meetings, discussing technical issues with teammates                 | ☐    | ✅    | ☐       |
+| 8   | **Teamwork**                        | Coordinating with team members on backend features and pull request reviews                       | ☐    | ✅    | ☐       |
+| 9   | **Professional conduct**            | Maintaining respectful interactions with mentors, teammates, and community members               | ✅    | ☐    | ☐       |
+| 10  | **Problem-solving skills**          | Debugging Lambda functions, resolving integration issues between services                        | ☐    | ✅    | ☐       |
+| 11  | **Contribution to project/team**    | Implemented pagination, student history, auto-close session features and testing pipeline         | ☐    | ✅    | ☐       |
+| 12  | **Overall**                         | General evaluation of the entire internship period                                               | ☐    | ✅    | ☐       |
 
-### Needs Improvement
+### Areas for Improvement
 
-* Strengthen discipline and strictly comply with the rules and regulations of the company or any organization  
-* Improve problem-solving thinking  
-* Enhance communication skills in both daily interactions and professional contexts, including handling situations effectively
+* **Deepen AWS expertise:** While I gained a working knowledge of core services, I need more hands-on experience with advanced topics like CloudFormation drift detection and multi-region architectures.
+* **Strengthen problem-solving speed:** Some debugging tasks took longer than expected due to unfamiliarity with CloudWatch Logs and distributed tracing.
+* **Improve technical communication:** I should practice explaining architectural decisions more clearly and concisely during team discussions and presentations.

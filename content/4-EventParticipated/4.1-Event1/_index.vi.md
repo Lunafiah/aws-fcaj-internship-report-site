@@ -77,6 +77,6 @@ Tham gia **FCAJ Meetup Day 2026** là một trải nghiệm rất bổ ích, gi�
 - Được truyền cảm hứng từ lộ trình 8 bước trở thành AWS Partner và các chương trình cộng đồng sinh viên[cite: 3].
 
 #### Một số hình ảnh sự kiện
-![Ảnh 1](images/event1_1.jpg)
-![Ảnh 2](images/event1_2.jpg)
+![Ảnh 1](event1.jpg)
+![Ảnh 2](event2.jpg)
 > Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật về kiến trúc hệ thống mà còn giúp tôi thay đổi cách tư duy về định hướng nghề nghiệp, tư duy hệ thống và văn hóa làm việc tại môi trường quốc tế.
