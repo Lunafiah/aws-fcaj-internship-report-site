@@ -1,125 +1,82 @@
 ---
-title: "Event 1"
-date: 2024-01-01
+title: "FCAJ meetup day 2026"
+date: 2026-06-13
 weight: 1
 chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
-# Bài thu hoạch “GenAI-powered App-DB Modernization workshop”
+# Bài thu hoạch “FCAJ meetup day 2026”
 
 ### Mục Đích Của Sự Kiện
-
-- Chia sẻ best practices trong thiết kế ứng dụng hiện đại
-- Giới thiệu phương pháp DDD và event-driven architecture
-- Hướng dẫn lựa chọn compute services phù hợp
-- Giới thiệu công cụ AI hỗ trợ development lifecycle
+- Chia sẻ góc nhìn thực tế về công việc và trách nhiệm của một DevOps Engineer[cite: 1].
+- Hướng dẫn thiết kế kiến trúc hệ thống rút gọn URL có khả năng mở rộng trên AWS[cite: 2].
+- Vạch ra lộ trình phát triển từ sinh viên đến AWS Partner và tham gia đóng góp cho cộng đồng[cite: 3].
+- Chia sẻ định hướng nghề nghiệp cho Data Analytics Engineer và văn hóa làm việc tại các tập đoàn đa quốc gia (MNCs)[cite: 4].
 
 ### Danh Sách Diễn Giả
-
-- **Jignesh Shah** - Director, Open Source Databases
-- **Erica Liu** - Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** - Assc. Specialist SA, Serverless Amazon Web Services
+- **Trong H. Truong** – DevOps Engineer @ Endava Vietnam[cite: 1]
+- **Đinh Trung Kiên** – Lead developer at startup[cite: 2]
+- **Nguyễn Minh Thọ** – Student[cite: 2]
+- **Danh Hoàng Hiếu Nghị** – AI Engineer, AWS Community Builder, AWS Student Builder Group Leader[cite: 3]
+- **Đạt Phạm** – Data Analytics Engineer[cite: 4]
+- **Cường Nguyễn** – Process Engineer[cite: 4]
 
 ### Nội Dung Nổi Bật
 
-#### Đưa ra các ảnh hưởng tiêu cực của kiến trúc ứng dụng cũ
+#### Công Việc Thực Tế Của DevOps Engineer
+- Phạm vi công việc DevOps phụ thuộc nhiều vào bối cảnh như quy mô công ty, cấu trúc team và độ phức tạp của sản phẩm[cite: 1].
+- Công việc thực tế không chỉ có viết CI/CD pipeline mà còn bao gồm trực hệ thống (on-call) 24/7, xử lý sự cố, gỡ lỗi, hỗ trợ môi trường và điều tra chi phí tài nguyên[cite: 1].
+- Nhấn mạnh tầm quan trọng của nền tảng cơ bản (Linux, mạng, ngôn ngữ lập trình) thay vì chỉ học cách sử dụng công cụ[cite: 1].
 
-- Thời gian release sản phẩm lâu → Mất doanh thu/bỏ lỡ cơ hội
-- Hoạt động kém hiệu quả → Mất năng suất, tốn kém chi phí
-- Không tuân thủ các quy định về bảo mật → Mất an ninh, uy tín
+#### Kiến Trúc Hệ Thống URL Shortener Trên AWS
+- Hệ thống rút gọn URL cơ bản gặp nhiều hạn chế như lỗ hổng bảo mật, độ trễ đọc và điểm nghẽn (single point of failure)[cite: 2].
+- Kiến trúc mở rộng sử dụng Amazon CloudFront, Route 53, WAF, Amazon ECS (SpringBoot), DynamoDB và Amazon ElastiCache (Redis)[cite: 2].
+- Dịch vụ Key Generation Service (KGS) tính toán trước (pre-generate) các mã ngắn và đẩy vào hàng đợi Redis để việc tạo URL diễn ra tức thì và không bị trùng lặp[cite: 2].
+- Luồng đọc dữ liệu áp dụng Cache-aside pattern, ưu tiên đọc từ bộ nhớ đệm trước để giảm thiểu áp lực cho cơ sở dữ liệu và giữ độ trễ thấp[cite: 2].
 
-#### Chuyển đổi sang kiến trúc ứng dụng mới - Microservice Architecture
-
-Chuyển đổi thành hệ thống modular – từng chức năng là một **dịch vụ độc lập** giao tiếp với nhau qua **sự kiện** với 3 trụ cột cốt lõi:
-
-- **Queue Management**: Xử lý tác vụ bất đồng bộ
-- **Caching Strategy:** Tối ưu performance
-- **Message Handling:** Giao tiếp linh hoạt giữa services
-
-#### Domain-Driven Design (DDD)
-
-- **Phương pháp 4 bước**: Xác định domain events → sắp xếp timeline → identify actors → xác định bounded contexts
-- **Case study bookstore**: Minh họa cách áp dụng DDD thực tế
-- **Context mapping**: 7 patterns tích hợp bounded contexts
-
-#### Event-Driven Architecture
-
-- **3 patterns tích hợp**: Publish/Subscribe, Point-to-point, Streaming
-- **Lợi ích**: Loose coupling, scalability, resilience
-- **So sánh sync vs async**: Hiểu rõ trade-offs (sự đánh đổi)
-
-#### Compute Evolution
-
-- **Shared Responsibility Model**: Từ EC2 → ECS → Fargate → Lambda
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value
-- **Functions vs Containers**: Criteria lựa chọn phù hợp
-
-#### Amazon Q Developer
-
-- **SDLC automation**: Từ planning đến maintenance
-- **Code transformation**: Java upgrade, .NET modernization
-- **AWS Transform agents**: VMware, Mainframe, .NET migration
+#### Tư Duy Phát Triển Nghề Nghiệp và Văn Hóa MNC
+- Mô hình phát triển cá nhân gồm 5 giai đoạn: Follower (Người thực thi), Learner (Người học chủ động), Problem Solver (Người giải quyết vấn đề), System Thinker (Người tư duy hệ thống) và Super Star (Người dẫn dắt)[cite: 4].
+- Data Analytics Engineer cần trang bị tư duy phản biện, kỹ năng giao tiếp, kể chuyện với dữ liệu và khả năng giải quyết vấn đề[cite: 4].
+- Văn hóa tại MNCs đề cao "No-Blame Post-Mortem" (tập trung tìm nguyên nhân cốt lõi để sửa hệ thống thay vì đổ lỗi cá nhân) và môi trường "Caring & Inclusive"[cite: 4].
+- Hành trình trở thành AWS Partner trải qua 8 bước, bắt đầu từ sự tò mò của sinh viên đến khi áp dụng thực tế và đóng góp ngược lại (Share Back) cho cộng đồng[cite: 3].
 
 ### Những Gì Học Được
 
 #### Tư Duy Thiết Kế
+- **Separation of Concerns (Tách biệt mối quan tâm):** Tách biệt luồng đọc và ghi để tối ưu hóa theo đặc thù lưu lượng truy cập của từng luồng thay vì dùng chung một điểm nghẽn[cite: 2].
+- **Defense at the Edge (Phòng thủ từ rìa):** Đưa bảo mật và bộ nhớ đệm ra càng gần người dùng càng tốt để các mối đe dọa và tải trọng không chạm tới hệ thống lõi[cite: 2].
+- **Tư Duy Hệ Thống:** Tập trung tư duy theo cả một hệ thống thay vì chỉ sửa những lỗi lặt vặt[cite: 1].
 
-- **Business-first approach**: Luôn bắt đầu từ business domain, không phải technology
-- **Ubiquitous language**: Importance của common vocabulary giữa business và tech teams
-- **Bounded contexts**: Cách identify và manage complexity trong large systems
-
-#### Kiến Trúc Kỹ Thuật
-
-- **Event storming technique**: Phương pháp thực tế để mô hình hóa quy trình kinh doanh
-- Sử dụng **Event-driven communication** thay vì synchronous calls
-- **Integration patterns**: Hiểu khi nào dùng sync, async, pub/sub, streaming
-- **Compute spectrum**: Criteria chọn từ VM → containers → serverless
-
-#### Chiến Lược Hiện Đại Hóa
-
-- **Phased approach**: Không rush, phải có roadmap rõ ràng
-- **7Rs framework**: Nhiều con đường khác nhau tùy thuộc vào đặc điểm của mỗi ứng dụng
-- **ROI measurement**: Cost reduction + business agility
+#### Chiến Lược Nghề Nghiệp
+- **Nắm Vững Nền Tảng:** Công cụ có thể thay đổi nhưng nền tảng thì không[cite: 1].
+- **Hỏi "Tại sao" Trước Khi Hỏi "Thế nào":** Cần hiểu rõ nguyên nhân gốc rễ của vấn đề thay vì chỉ sao chép câu lệnh[cite: 1].
+- **Triết lý "Đúng Việc":** Cân bằng giữa Làm Người (tự quản trị nội tâm), Làm Nghề (có mục đích phụng sự) và Làm Dân (tạo di sản công nghệ cho cộng đồng)[cite: 4].
 
 ### Ứng Dụng Vào Công Việc
+- **Áp dụng Pre-computation:** Tính toán và tạo sẵn dữ liệu (như cách KGS tạo mã ngắn) để giảm thiểu thời gian xử lý khi có yêu cầu từ người dùng[cite: 2].
+- **Triển khai Cache-aside Pattern:** Tối ưu hóa các dịch vụ có lượng đọc lớn bằng cách dùng Redis làm bộ nhớ đệm trước khi truy vấn cơ sở dữ liệu chính[cite: 2].
+- **Kể chuyện với dữ liệu:** Biến những con số khô khan thành những câu chuyện có ý nghĩa để thúc đẩy các quyết định kinh doanh[cite: 4].
+- **Tham gia cộng đồng:** Tham gia các nhóm AWS Study Group hoặc AWS Community Builder để liên tục học hỏi thực hành và chia sẻ kiến thức[cite: 3].
 
-- **Áp dụng DDD** cho project hiện tại: Event storming sessions với business team
-- **Refactor microservices**: Sử dụng bounded contexts để identify service boundaries
-- **Implement event-driven patterns**: Thay thế một số sync calls bằng async messaging
-- **Serverless adoption**: Pilot AWS Lambda cho một số use cases phù hợp
-- **Try Amazon Q Developer**: Integrate vào development workflow để boost productivity
+### Trải Nghiệm Trong Event
 
-### Trải nghiệm trong event
-
-Tham gia workshop **“GenAI-powered App-DB Modernization”** là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện về cách hiện đại hóa ứng dụng và cơ sở dữ liệu bằng các phương pháp và công cụ hiện đại. Một số trải nghiệm nổi bật:
+Tham gia **FCAJ Meetup Day 2026** là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện về thực tế công việc DevOps, thiết kế kiến trúc đám mây AWS và định hướng phát triển sự nghiệp. Một số trải nghiệm nổi bật:
 
 #### Học hỏi từ các diễn giả có chuyên môn cao
-- Các diễn giả đến từ AWS và các tổ chức công nghệ lớn đã chia sẻ **best practices** trong thiết kế ứng dụng hiện đại.
-- Qua các case study thực tế, tôi hiểu rõ hơn cách áp dụng **Domain-Driven Design (DDD)** và **Event-Driven Architecture** vào các project lớn.
+- Được lắng nghe những góc khuất thực tế nhưng cực kỳ quan trọng về công việc của một DevOps Engineer, hiểu được vai trò của kỹ năng giao tiếp và nền tảng cốt lõi[cite: 1].
+- Tiếp thu kiến thức thực chiến về cách thiết kế một hệ thống đám mây có khả năng mở rộng cao với DynamoDB và ElastiCache[cite: 2].
 
 #### Trải nghiệm kỹ thuật thực tế
-- Tham gia các phiên trình bày về **event storming** giúp tôi hình dung cách **mô hình hóa quy trình kinh doanh** thành các domain events.
-- Học cách **phân tách microservices** và xác định **bounded contexts** để quản lý sự phức tạp của hệ thống lớn.
-- Hiểu rõ trade-offs giữa **synchronous và asynchronous communication** cũng như các pattern tích hợp như **pub/sub, point-to-point, streaming**.
+- Hiểu được cách giải quyết bài toán trùng lặp mã và độ trễ bằng cách sử dụng dịch vụ tạo mã trước (KGS) và hàng đợi Redis[cite: 2].
+- Nhận thức được tầm quan trọng của việc phòng thủ từ rìa (Defense at the Edge) để bảo vệ hệ thống lõi khỏi các nguy cơ bảo mật[cite: 2].
 
-#### Ứng dụng công cụ hiện đại
-- Trực tiếp tìm hiểu về **Amazon Q Developer**, công cụ AI hỗ trợ SDLC từ lập kế hoạch đến maintenance.
-- Học cách **tự động hóa code transformation** và pilot serverless với **AWS Lambda**, từ đó nâng cao năng suất phát triển.
+#### Góc nhìn về nghề nghiệp và văn hóa
+- Nắm bắt được lộ trình 5 giai đoạn phát triển sự nghiệp để từng bước nâng cao năng lực lên cấp độ Tư duy hệ thống và Dẫn dắt[cite: 4].
+- Hiểu rõ quy trình tuyển dụng và tầm quan trọng của văn hóa "No-Blame" tại các tập đoàn công nghệ đa quốc gia[cite: 4].
+- Được truyền cảm hứng từ lộ trình 8 bước trở thành AWS Partner và các chương trình cộng đồng sinh viên[cite: 3].
 
-#### Kết nối và trao đổi
-- Workshop tạo cơ hội trao đổi trực tiếp với các chuyên gia, đồng nghiệp và team business, giúp **nâng cao ngôn ngữ chung (ubiquitous language)** giữa business và tech.
-- Qua các ví dụ thực tế, tôi nhận ra tầm quan trọng của **business-first approach**, luôn bắt đầu từ nhu cầu kinh doanh thay vì chỉ tập trung vào công nghệ.
-
-#### Bài học rút ra
-- Việc áp dụng DDD và event-driven patterns giúp giảm **coupling**, tăng **scalability** và **resilience** cho hệ thống.
-- Chiến lược hiện đại hóa cần **phased approach** và đo lường **ROI**, không nên vội vàng chuyển đổi toàn bộ hệ thống.
-- Các công cụ AI như Amazon Q Developer có thể **boost productivity** nếu được tích hợp vào workflow phát triển hiện tại.
-
-#### Một số hình ảnh khi tham gia sự kiện
-* Thêm các hình ảnh của các bạn tại đây
-> Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.
+#### Một số hình ảnh sự kiện
+![Ảnh 1](images/event1_1.jpg)
+![Ảnh 2](images/event1_2.jpg)
+> Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật về kiến trúc hệ thống mà còn giúp tôi thay đổi cách tư duy về định hướng nghề nghiệp, tư duy hệ thống và văn hóa làm việc tại môi trường quốc tế.
