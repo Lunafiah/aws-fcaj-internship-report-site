@@ -1,31 +1,25 @@
 ---
 title: "Blog 3"
-date: 2024-01-01
+date: 2026-07-29
 weight: 1
 chapter: false
 pre: " <b> 3.3. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
 
-# SESSION POLICIES IN AMAZON EKS POD IDENTITY
-
-Amazon EKS Pod Identity has recently added the session policies feature, allowing you to narrow IAM permissions flexibly and precisely for each pod without needing to create many separate IAM roles. This is an important step forward that helps apply the principle of least privilege more effectively in large-scale Kubernetes environments.
+# [LESSONS I LEARNED FROM DESIGNING A SERVERLESS QR ATTENDANCE SYSTEM ON AWS](https://www.facebook.com/share/p/1BkEq1q5fx/)
 
 Key points to know:
 
-* A session policy is an inline IAM policy specified when creating or updating a Pod Identity association.
-* Effective permissions = intersection between the IAM role permissions and the session policy → the session policy can only narrow permissions, not expand them.
-* Helps avoid over-permissioning when reusing a single IAM role for multiple workloads with different needs.
-* Supports both same-account and cross-account (via IAM role chaining).
-* Significantly reduces the number of IAM roles that need to be managed, helping avoid hitting IAM quota limits in large clusters.
-* Easily configured through the AWS Management Console, AWS CLI, or AWS SDK when creating an association between a Kubernetes ServiceAccount and an IAM role.
+* Avoid placing too many responsibilities in a single AWS Lambda function.
+* Amazon API Gateway is more than just a service for defining REST APIs.
+* Amazon Cognito significantly reduces the complexity of implementing authentication and security.
+* DynamoDB data modeling should begin with understanding how the application will query the data.
+* AWS Secrets Manager helps separate sensitive information from the application source code.
+* AWS SAM makes the overall system architecture more structured and easier to manage.
+* A Serverless architecture not only reduces infrastructure management effort but also enables developers to focus more on delivering business value.
 
-This feature is especially useful when you have many applications running on the same IAM role but need different permission restrictions (for example: one pod only reads a specific S3 bucket, another pod only calls certain APIs).
+This experience helped me understand that designing a Serverless application is not simply about combining AWS services. Instead, it requires careful architectural planning, a clear separation of responsibilities, and the adoption of Infrastructure as Code (IaC) practices to build systems that are scalable, maintainable, and suitable for real-world deployment.
 
-...Image...
+![An illustration summarizing 7 key takeaways from the workshop using AWS services](img/3.jpg)
 
-...Link...
-
-...Guide...
+Link bài đăng: <https://www.facebook.com/share/p/1BkEq1q5fx/>
