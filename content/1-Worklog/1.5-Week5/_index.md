@@ -16,5 +16,6 @@ pre: " <b> 1.5. </b> "
 | 4 | - Design DynamoDB tables for attendance | 07/03/2026 | 07/04/2026 | |
 | 5 | - Explore Amazon Cognito fundamentals | 07/05/2026 | 07/05/2026 | |
 ### Week 5 Achievements:
-* Backend foundation built.
-* Database schema optimized for Serverless.
+* **Serverless Foundation Established:** Successfully implemented the core backend logic utilizing AWS SAM, establishing a robust Lambda and API Gateway integration pattern for the BK-Sync system.
+* **Optimized Database Design:** Designed and modeled the DynamoDB tables specifically tailored for the attendance tracking feature, ensuring high performance and scalability in a Serverless environment.
+* **Authentication Preparation:** Explored and understood the fundamentals of Amazon Cognito to prepare for upcoming user authentication and authorization implementation.

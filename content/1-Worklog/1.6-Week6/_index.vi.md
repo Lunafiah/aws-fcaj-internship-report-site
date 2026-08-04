@@ -16,5 +16,6 @@ pre: " <b> 1.6. </b> "
 | 4 | - Cấu hình AWS Secrets Manager lưu HMAC | 10/07/2026 | 11/07/2026 | |
 | 5 | - Gắn thẻ tài nguyên & theo dõi chi phí | 12/07/2026 | 12/07/2026 | CloudJourney |
 ### Kết quả đạt được tuần 6:
-* Luồng xác thực hoạt động an toàn.
-* Key được mã hóa và lưu trữ an toàn.
+* **Bảo mật API toàn diện:** Tích hợp thành công API Gateway với Lambda và triển khai xác thực Amazon Cognito, thiết lập luồng đăng nhập an toàn và phân quyền chặt chẽ cho cả hai vai trò Admin và Student.
+* **Quản lý cấu hình an toàn:** Thiết lập AWS Secrets Manager để mã hóa, lưu trữ và truy xuất các dữ liệu cấu hình nhạy cảm một cách an toàn nhất, đặc biệt là các khóa HMAC.
+* **Sẵn sàng vận hành:** Triển khai chiến lược gắn thẻ (tagging) tài nguyên đồng bộ và thiết lập các cơ chế theo dõi chi phí, đảm bảo khả năng kiểm soát minh bạch về ngân sách trên Cloud.

@@ -16,5 +16,6 @@ pre: " <b> 1.6. </b> "
 | 4 | - Setup AWS Secrets Manager for HMAC key | 07/10/2026 | 07/11/2026 | |
 | 5 | - Resource tagging and cost tracking | 07/12/2026 | 07/12/2026 | CloudJourney |
 ### Week 6 Achievements:
-* Auth flow working securely.
-* Secrets are encrypted and safely stored.
+* **Robust API Security:** Successfully integrated API Gateway with Lambda and implemented comprehensive Amazon Cognito authentication, establishing secure login flows for both Admin and Student roles.
+* **Secure Configuration Management:** Set up AWS Secrets Manager to securely encrypt, store, and retrieve sensitive configuration data, including the HMAC keys.
+* **Operational Readiness:** Implemented comprehensive resource tagging strategies and configured cost tracking mechanisms to ensure complete visibility into cloud spending.

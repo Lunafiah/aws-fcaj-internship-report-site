@@ -11,11 +11,12 @@ pre: " <b> 1.2. </b> "
 ### Tasks to be carried out this week:
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
-| 2 | - Create AWS Free Tier account & AWS Budgets | 06/08/2026 | 06/08/2026 | CloudJourney |
-| 3 | - Complete $100 tasks: EC2, Lambda web app, RDS | 06/09/2026 | 06/10/2026 | CloudJourney |
-| 4 | - Study IAM Access Control & Install AWS CLI | 06/11/2026 | 06/11/2026 | |
-| 5 | - Install Kiro IDE & explore CloudFormation | 06/12/2026 | 06/12/2026 | |
+| 2 | - Create AWS Free Tier account & AWS Budgets | 06/08/2026 | 06/08/2026 | [Create AWS Account](https://000001.awsstudygroup.com/en/) |
+| 3 | - Complete $100 tasks: EC2, Lambda web app, RDS | 06/09/2026 | 06/10/2026 | [Complete $100 Tasks](https://000001.awsstudygroup.com/4-h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-chi-ti%E1%BA%BFt-5-nhi%E1%BB%87m-v%E1%BB%A5-ki%E1%BA%BFm-ti%E1%BB%81n/) |
+| 4 | - Study IAM Access Control & Install AWS CLI | 06/11/2026 | 06/11/2026 | [IAM Access Control](https://000002.awsstudygroup.com/vi/) [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html) |
+| 5 | - Install Kiro IDE & explore CloudFormation | 06/12/2026 | 06/12/2026 | [CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html) |
 | 6 | - Attend FCAJ Meetup event | 06/13/2026 | 06/14/2026 | |
 ### Week 2 Achievements:
-* Account secured with Budgets and IAM.
-* Hands-on experience with core AWS services.
+* **Secure Cloud Foundation:** Successfully set up the AWS Free Tier account with robust security measures, including IAM Access Control and AWS Budgets to prevent unexpected costs.
+* **Hands-on Cloud Experience:** Completed foundational tasks using core AWS services, successfully deploying an EC2 instance, building a Lambda web app, and configuring an RDS database.
+* **Environment Ready:** Installed and configured essential development tools, including the AWS CLI and Kiro IDE, and gained initial exposure to Infrastructure as Code via CloudFormation.
